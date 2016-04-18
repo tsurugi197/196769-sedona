@@ -24,31 +24,31 @@
 		<div class="container">
 			<div class="filter-block">
 				<form>
-					<div class="column-1">
-						<h3>инфраструктура:</h3>
+					<fieldset class="column-1">
+						<legend>инфраструктура:</legend>
 						<input type="checkbox" id="pool">
 						<label for="pool">бассейн</label>
 						<input type="checkbox" id="parking">
 						<label for="parking">парковка</label>
 						<input type="checkbox" id="wi-fi">
 						<label for="wi-fi">wi-fi</label>
-					</div>
-					<div class="column-2">
-						<h3>тип жилья:</h3>
+					</fieldset>
+					<fieldset class="column-2">
+						<legend>тип жилья:</legend>
 						<input type="checkbox" id="hotel">
 						<label for="hotel">гостинца</label>
 						<input type="checkbox" id="motel">
 						<label for="motel">мотель</label>
 						<input type="checkbox" id="apartment">
 						<label for="apartment">апартаменты</label>
-					</div>
-					<div class="column-3">
-						<h3>стоимость в сутки (р):</h3>
-						<div><output></output></div>
-						<div><output></output></div>
+					</fieldset>
+					<fieldset class="column-3">
+						<legend>стоимость в сутки (р):</legend>
+						<div><input type="text"></div>
+						<div><input type="text"></div>
 						<input type="range" min="0" max="5000">
-					</div>
-					<a href="#">показать</a>
+						<button type="submit">показать</button>
+					</fieldset>
 				</form>
 			</div>
 			<div class="result">
@@ -69,19 +69,19 @@
 				<div class="sort-down">
 					<!-- блок для псевдоэлемента -->
 				</div>
-				</div>
-				<div class="result-line">
-					<div class="result-imaage">
+				</div>	
+				<div class="hotels-catalog">
+					<div class="hotels-catalog_image">
 						<img src="http://placehold.it/150x100" alt="Картиночка тип;d">
 					</div>
-					<div class="result-info">
-						<div class="result-name">
+					<div class="hotels_catalog_info">
+						<div class="hotels-catalog_title">
 							<h2>amara resort & spa </h2>
 						</div>
-						<div class="result-type">
+						<div class="hotels-catalog_type">
 							гостиница 
 						</div>
-						<div class="result-price">
+						<div class="hotels-catalog_price">
 							от 3500 р.
 						</div>
 						<a href="#" class="more-info">подробнее</a>
@@ -97,18 +97,18 @@
 					</div>
 				</div>
 				<!-- first-line -->
-				<div class="result-line">
-					<div class="result-imaage">
+				<div class="hotels-catalog">
+					<div class="hotels-catalog_image">
 						<img src="http://placehold.it/150x100" alt="Картиночка тип;d">
 					</div>
-					<div class="result-info">
-						<div class="result-name">
+					<div class="hotels-catalog_info">
+						<div class="hotels-catalog_name">
 							<h2>desert quail inn</h2>
 						</div>
-						<div class="result-type">
+						<div class="hotels-catalog_type">
 							мотель
 						</div>
-						<div class="result-price">
+						<div class="hotels-catalog_price">
 							от 2000 р.
 						</div>
 						<a href="#" class="more-info">подробнее</a>
@@ -124,18 +124,18 @@
 					</div>
 				</div>
 				<!-- second line -->
-				<div class="result-line">
-					<div class="result-imaage">
+				<div class="hotels-catalog">
+					<div class="hotels-catalog_image">
 						<img src="http://placehold.it/150x100" alt="Картиночка тип;d">
 					</div>
-					<div class="result-info">
-						<div class="result-name">
+					<div class="hotels-catalog_info">
+						<div class="hotels-catalog_name">
 							<h2>villas at poco diablo</h2>
 						</div>
-						<div class="result-type">
+						<div class="hotels-catalog_type">
 							апартаменты 
 						</div>
-						<div class="result-price">	
+						<div class="hotels-catalog_price">	
 							от 4000 р.
 						</div>
 						<a href="#" class="more-info">подробнее</a>
@@ -158,22 +158,16 @@
 	<!-- footer -->
 	<footer class="page-footer">
 		<div class="container">
-			<section>
-				<div class="page-tag">
+			<section class="page-tag">
 					<h2>#visitsedona</h2>
-				</div>
 			</section>
-			<section>
-				<div class="social">
+			<section class="social">
 					<a href="#" class="social-btn social-tw">твитер</a>
 					<a href="#" class="social-btn social-fc">фейсбук</a>
 					<a href="#" class="social-btn social-yt">ютьюб</a>
-				</div>
 			</section>
-			<section>
-				<div class="copyright">
+			<section class="copyright">
 					<img src="http://placehold.it/150x100" alt="Типо лого академи;d">
-				</div>
 			</section>
 		</div>
 	</footer>
