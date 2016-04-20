@@ -1,3 +1,32 @@
+
 body {
-	
+	font-size: 14px;
+	line-height: 21px;
+	font-family: "PT Sans Regular","Arial", sans-serif;
+}
+header {
+	font-size: 14px;
+	line-height:24px;
+}
+h2 {
+	font-size: 21px;
+	line-height: 26px;
+	font-family: "PT Sans Bold","Arial", sans-serif;
+}
+b {
+	font-size: 21px;
+	line-height: 21px;
+	font-family: "PT Sans Bold","Arial", sans-serif;
+}
+h3 {
+	font-size: 30px;
+	line-height: 24px;
+	font-family: "PT Sans Bold","Arial", sans-serif;
+}
+.promo {
+	background: url("../img/intro.jpg");
+	background-repeat: no-repeat;
+}
+.container {
+	text-align: center;
 }
