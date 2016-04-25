@@ -326,7 +326,7 @@ main {
 	font-size: 14px;
 	line-height: 26px;
 }
-.search-form input[type="date"] {
+.search-form .date-field {
 	width: 331px;
 	height: 38px;
 	padding-left: 15px;
@@ -336,14 +336,14 @@ main {
 	border: none;
 	appearance: none;
 	-webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
+  	-moz-appearance: none;
+  	-ms-appearance: none;
 }
-.search-form input[type="date"]::after {
+.search-form .date-field::after {
 	content:'';
 	position: relative;
 	right: 9px;
-	display:inline-block;
+	display: inline-block;
 	width: 21px;
 	height: 22px;
 	background: url('../img/dateicon.png');
@@ -356,7 +356,7 @@ main {
 	margin-left: 18px;
 	padding-left: 40px;
 	line-height: 38px;
-  font-weight: bold;
+  	font-weight: bold;
 	background: #f2f2f2;
 	border: none;
 	outline: none;
