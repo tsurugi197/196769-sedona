@@ -1,13 +1,6 @@
-var searchBtn = document.getElementById("big-button");
+var obj = document.getElementById("search-form");
+var searchBtn = document.getElementById("caller-btn");
 searchBtn.addEventListener("click", function(event) {
 	event.preventDefault();
+	obj.classList.toggle("show-hide");
 }, false);
-function showHide(element_id) {
-  if (document.getElementById(element_id)) {
-    var obj = document.getElementById(element_id);
-      if (obj.style.display != "block") {
-        obj.style.display = "block";
-       }
-      else obj.style.display = "none";
-    }
-  }

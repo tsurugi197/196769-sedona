@@ -2,130 +2,168 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Sedona</title>
+	<title>Document</title>
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="fonts/fa/css/font-awesome.min.css">
 </head>
 <body>
-	<!-- Header -->
-	<header class="main-header container clearfix">
-			<nav >
-				<ul class="main-menu">
-					<li><a href="index.html">информация</a></li>
-					<li><a href="#">фото и видео</a></li>
-					<li class="main-logo"><img src="img/menu-logo.png" alt=""></li>
+	<header class="main-header">
+		<div class="page-wraper clearfix">
+			<nav class="main-navigation">
+				<ul>
+					<li><a href="#">Информация</a></li>
+					<li><a href="#">Фото и видео</a></li>
+					<li class="menu-logo"><a href="index.html"><img src="img/menu-logo.png" alt="Sedona" width="138" height="70"></a></li>
 					<li><a href="sedona-hotels.html">гостиницы</a></li>
 					<li><a href="#">карта штата</a></li>
 				</ul>
-			</nav>	
+			</nav>
+		</div>
 	</header>
-	<!-- Header -->
-	<main class="container">
-		<div class="promo-image">
-			<img src="img/intro.jpg" alt="" height="508" width="1200">
-		</div>
-		<div class="intro-text">
-			<b>седона - небольшой городок в аризоне, заслуживающий большего!</b>
-			<p>рассмотрим 5 причин почему седона круче, чем гранд каньон</p>
-		</div>
-		<div class="sedona-content">
-			<div class="facts clearfix ">
-				<div class="facts-text">
-					<div class="fact-title">настоящий городок</div>
+	<main>
+		<div class="page-wraper clearfix" >
+			<div class="promo-image">
+				<img src="img/intro.jpg" alt="SEDONA" width="1200" height="508">
+			</div>
+			<div class="promo-text">
+				<b>седона <span class="sedona-narrow"></span> небольшой городок в аризоне,<br> заслуживающий большего!</b>
+				<p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+			</div>
+			<div class="facts-line clearfix">
+				<div class="fact-block city fact-lightblue">
+					<div class="fact-title"> Настоящий городок</div>
 					<div class="fact-number">№1</div>
-					<p class="fact-thing"><span>седона</span> - не атракцион для туристов, там течет своя жизнь</p>
+					<div class="fact-text">седона <span class="sedona-narrow"></span> не аттракцион для туристов, там течет своя жизнь</div>
 				</div>
-				<div class="facts-image">
-					
+				<div class="facts-image city-image">
+					<!-- background - image-block -->
 				</div>
 			</div>
 			<div class="features clearfix">
-				<div class="features-item">
-					<div class="features-image"><img src="img/house.png" alt="" width="75" height="72"></div>
-					<div class="features-title">жилье</div>
-					<div class="features-text">рекомендуем пожить в настоящем мотеле, все как в кино!</div>
+				<div class="features-item live-item">
+					<div class="live-img">
+						<img src="img/house.png" alt="" width="75" height="72">
+					</div>
+					<div class="feature-title">
+						Жилье
+					</div>
+					<div class="live-text">
+						Рекомендуем пожить в настоящем мотеле, все как в кино!
+					</div>
 				</div>
-					<div class="features-item">
-					<div class="features-image"><img src="img/gamburger.png" alt="" width="75" height="72"></div>
-					<div class="features-title">еда</div>
-					<div class="features-text">рекомендуем пожить в настоящем мотеле, все как в кино!</div>
+				<div class="features-item food-item">
+					<div class="food-img">
+						<img src="img/gamburger.png" alt="" width="74" height="71">
+					</div>
+					<div class="feature-title">
+						Еда
+					</div>
+					<div class="food-text">
+						Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+					</div>
 				</div>
-					<div class="features-item">
-					<div class="features-image"><img src="img/present.png" alt="" width="75" height="72"></div>
-					<div class="features-title">сувениры</div>
-					<div class="features-text">рекомендуем пожить в настоящем мотеле, все как в кино!</div>
+				<div class="features-item present-item">
+					<div class="present-img">
+						<img src="img/present.png" alt="" width="64" height="76">
+					</div>
+					<div class="feature-title">
+						Сувениры
+					</div>
+					<div class="present-text">
+						Не только китайского, но и местного производства!
+					</div>
 				</div>
 			</div>
-			<div class="facts clearfix">
-				<div class="facts-image">
-					
-				</div>
-				<div class="facts-text">
-					<div class="fact-title ">там есть мост дьявола</div>
+			<div class="facts-line clearfix">
+				<div class="fact-block bridge fact-lightblue">
+					<div class="fact-title">Там есть мост дьявола</div>
 					<div class="fact-number">№2</div>
-					<div class="fact-thing">Да, по нему можно пройти! Если конечно вы осмелитесь</div>
+					<div class="fact-text">Да, по нему можно пройти! Если конечно вы осмелитесь</div>
+				</div>
+				<div class="facts-image bridge-image">
+					<!-- background - image-block -->
 				</div>
 			</div>
-			<div class="facts facts-line clearfix">
-				<div class="facts-text">
-					<div class="fact-title">небольшая площадь</div>
+			<div class="facts-line clearfix">
+				<div class="fact-block square fact-gray">
+					<div class="fact-title">Небольшая площадь</div>
 					<div class="fact-number">№3</div>
-					<div class="fact-thing">все достопримечательности находятся очень близко</div>
+					<div class="fact-text">Все достопримечательности находятся очень близко</div>
 				</div>
-				<div class="facts-text">
-					<div class="fact-title">красивая дорога</div>
+				<div class="fact-block road fact-gray">
+					<div class="fact-title">Красивая дорога</div>
 					<div class="fact-number">№4</div>
-					<div class="fact-thing">ехать в седону из лас-вегаса совсем не скучно!</div>
+					<div class="fact-text">Ехать в седону из лас-вегаса совсем не скучно!</div>
 				</div>
-				<div class="facts-text">
-					<div class="fact-title">мало туристов</div>
+				<div class="fact-block tourist fact-gray">
+					<div class="fact-title">Мало туристов</div>
 					<div class="fact-number">№5</div>
-					<div class="fact-thing">большинство едет в гранд каньон и толпится там</div>
+					<div class="fact-text">Большинство едет в гранд каньон и толпится там</div>
 				</div>
 			</div>
 			<div class="form-caller">
-				<b>заинтересовались?</b>
-				<div class="instructions">
-					укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне
+				<div class="caller-title">Заинтересовались?</div>
+				<div class="caller-instructions">
+					Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне
 				</div>
-				<a href="#" class="big-button" id="big-button" onclick="showHide('search-form')">поиск гостиницы в седоне</a>
-			</div>
-			<div class="search-form" id="search-form">
-				<form action="none">
-				<label for="datein">дата заезда:</label>
-				<input class="date-field" type="text" name="datein" id="datein" >
-				<label for="dateout">дата заезда:</label>
-				<input class="date-field" type="text" name="dateout" id="dateout" >
-				<label for="adult">взрослые:</label>
-				<input type="number"  class="adult" name="adult" id="adult">
-				<label for="adult">дети:</label>
-				<input type="number" class="kids" name="kids" id="kids">
-				<input type="submit" class="search-btn" value="найти">
-				</form>
-			</div>
-			<div class="map">
-				<!-- google map -->
+				<a href="#" class="caller-btn" id="caller-btn">поиск гостиницы в седоне</a>
+				<div class="search-form show-hide" id="search-form">
+					<form>
+						<div class="labels">
+						<ul>
+							<li>
+								<label for="datein">дата заезда:</label>
+							</li>
+							<li>
+								<label for="dateout">дата выезда:</label>
+							</li>
+							<li>
+								<label for="adult">взрослые:</label>
+							</li>
+						</ul>
+						</div>
+						<div class="input-block">
+							<div class="input-in">
+								<input type="text" class="date-input" id="datein" placeholder="24 апреля 2016">
+							</div>
+							<div class="input-out">
+								<input type="text" class="date-input" id="dateout" placeholder="4 июля 2016">
+							</div>
+							<div class="input-adult icon-minus">
+								<input type="text" class="number-input" id="adult" placeholder="2">
+							</div>
+							<label for="kids">дети:</label>
+							<div class="input-kids icon-minus">
+								<input type="text" class="number-input" id="kids" placeholder="0">
+							</div>
+						</div>
+						<input type="submit" value="найти" class="search-btn">
+					</form>
+				</div>
 			</div>
 		</div>
-	</main> 
-	<footer >
-	<div class="container clearfix">
-	<div class="main-footer">
-		<section class="footer-tag">
-			<b>#visitsedona</b>
-		</section>
-		<section class="footer-social">
-			<a href="#" class="social-btn social-tw"><i class="fa">&#xf099;</i></a>
-			<a href="#" class="social-btn social-fc"><i class="fa">&#xf09a;</i></a>
-			<a href="#" class="social-btn social-yt"><i class="fa">&#xf16a;</i></a>
-		</section>
-		<section class="footer-copyright">
-		  <div class="academy-logo">website by</div>
-		</section>
-	</div>
-	</div>
-	</footer>
-	<script type="text/javascript" src="js/javascript.js"></script>
+	</main>
+	<footer class="main-footer">
+		<div class="footer-wraper">
+			<!-- interactive google map or background-image idk, but now it will be bg-img -->
+			<div class="footer-block clearfix">
+				<section class="page-tag">
+					#visitsedona
+				</section>
+				<section class="footer-social">
+					<a href="#" class="social-btn social-tw"><span class="icon-twitter"></span></a>
+					<a href="#" class="social-btn social-fc"><span class="icon-facebook"></span></a>
+					<a href="#" class="social-btn social-yt"><span class="icon-youtube"></span></a>
+				</section>
+				<section class="footer-copyright">
+					Website By
+					<a href="#">
+						<div class="academy-logo"></div>
+					</a>
+				</section>
+			</div>
+		</div>
+	</footer>	
+	<script src="js/javascript.js"></script>
 </body>
 </html>
