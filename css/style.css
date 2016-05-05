@@ -112,7 +112,6 @@ b {
 	font-weight: bold;
 	text-decoration: none;
 	color: #000000;
-	font-size-adjust: 2;
 }
 .main-navigation li:nth-child(1),
 .main-navigation li:nth-child(2) {
@@ -420,8 +419,8 @@ b {
 	position: absolute;
 	left: 50%;
 	z-index: 2;
-	width: 460px;
-	padding: 55px 54px 55px 54px;
+	width: 461px;
+	padding: 55px 52px 55px 55px;
 	background: #ffffff;
 	-webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -450,9 +449,11 @@ b {
 }
 .date-input {
 	display: block;
-	width: 334px;
+	width: 284px;
+	height: 36px;
 	margin-bottom: 29px;
 	padding-left: 12px;
+	padding-right: 50px;
 	line-height: 36px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -472,9 +473,29 @@ b {
 .input-out {
 	position: relative;
 }
-.input-in::after,
-.input-out {
-	content:'';
+.calendar-btn {
+	position: absolute;
+	top: 8px;
+	right: 6px;
+	width: 15px;
+	height: 25px;
+	font-size: 21px;
+	color: #c2c2c2;
+	background: none;
+	border: none;
+	outline: none;
+}
+.calendar-btn i::before {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	font-size: 21px;
+}
+.calendar-btn i:hover::before {
+	color: #000000;
+}
+.calendar-btn:focus i::before {
+	color: #81b3d2;
 }
 label[for="kids"] {
 	margin-left: 50px;
@@ -483,6 +504,7 @@ label[for="kids"] {
 .number-input {
 	display: inline-block;
 	width: 15px;
+	height: 36px;
 	padding-left: 54px;
 	padding-right: 45px;
 	margin-bottom: 54px;
@@ -494,25 +516,45 @@ label[for="kids"] {
 	border: none;
 	outline: none;
 }
+.search-form input[type="text"]:hover {
+	background: #ebebeb;
+}
+.search-form input[type="text"]:focus {
+	background: none;
+	outline: solid 2px #e5e5e5;
+}
+:focus::-webkit-input-placeholder,
+:focus::-moz-placeholder,
+:focus:-moz-placeholder,   {
+	
+}
 .input-adult,
 .input-kids {
 	position: relative;
 }
-.input-adult::before,
-.input-kids::before {
-	content: '\e802';
+.btn-minus,
+.btn-plus {
 	position: absolute;
-	top: 13px;
-	left: 10px;
+	top: 0;
+	height: 38px;
 	color: #a9a9a9;
+	background: none;
+	border: none;
+	outline: none;
 }
-.input-adult::after,
-.input-kids::after {
-	content: '\e801';
-	position: absolute;
-	top: 13px;
-	right: 10px;
-	color: #a9a9a9;
+.btn-minus {
+	left: 0;
+}
+.btn-plus {
+	right: 0;
+}
+.btn-minus:hover,
+.btn-plus:hover {
+	color: #000000;
+}
+.btn-minus:focus,
+.btn-plus:focus {
+	color: #81b3d2;
 }
 .search-btn {
 	display: block;
@@ -534,8 +576,6 @@ label[for="kids"] {
 	color: rgba(255, 255, 255, 0.3);
 	background: #5496bd;
 }
-
-
 .footer-wraper {
 	position: relative;
 	width: 1200px;
@@ -666,7 +706,7 @@ input[type="checkbox"]:disabled + .check-status::before {
 	margin-right: 17px;
 }
 .checkbox-column:nth-of-type(2) input[type="checkbox"]:checked  + .check-status::before {
-	right: -1px;
+	right: -0.5px;
 }
 .range-filter {
 	float: right;
@@ -732,7 +772,7 @@ input[type="checkbox"]:disabled + .check-status::before {
 	height: 4px;
 	border: 8px solid #ffffff;
 	border-radius: 50%;
-	background: #f2f2f2;
+	background: #ababab;
 	cursor: pointer;
 }
 .range-toggle-min {
@@ -755,6 +795,7 @@ input[type="checkbox"]:disabled + .check-status::before {
 	text-transform: uppercase;
 	color: #ffffff;
 	background: none;
+	outline: none;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
 }
@@ -824,19 +865,23 @@ input[type="checkbox"]:disabled + .check-status::before {
 	padding-top: 5px;
 	font-size: 0;
 }
-.sort-direction i {
+.sort-direction a {
+	margin: 0;
+	margin-right: -10px;
+	padding: 0;
 	font-size: 22px;
 	color: #b1b1b1;
-	margin-right: -10px;
+	text-decoration: none;
+	border: none;
 }
-.sort-direction .active-sort-dir {
+.sort-direction .active-direction  {
 	color: #81b3d2;
 }
-.sort-direction i:hover:not(.active-sort-dir) {
+.sort-direction a:hover:not(.active-direction) {
 	color: #000000;
 }
-.sort-direction i:focus {
-	color: #81d3d2;
+.sort-direction a:focus {
+	color: #81b3d2;
 }
 .result-item {
 	padding: 30px 73px;
@@ -937,3 +982,35 @@ input[type="checkbox"]:disabled + .check-status::before {
 	display: none;
 	opacity: 0;
 }
+
+
+
+/* for all placeholders styles for any browsers */
+:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+:focus::-moz-placeholder {
+	color: transparent;
+}
+:focus:-moz-placeholder {
+	color: transparent;
+}
+:focus:-ms-input-placeholder {
+	color: transparent;
+}
+.search-form input[placeholder] {
+	line-height: 26px;
+	text-overflow:ellipsis;
+}
+.search-form input::-moz-placeholder {
+	line-height: 26px;
+	text-overflow:ellipsis;
+} 
+.search-form input:-moz-placeholder {
+	line-height: 26px;
+	text-overflow:ellipsis;
+} 
+.search-form input:-ms-input-placeholder {
+	line-height: 26px;
+	text-overflow:ellipsis;
+} 

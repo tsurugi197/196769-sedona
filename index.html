@@ -13,7 +13,7 @@
 				<ul>
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Фото и видео</a></li>
-					<li class="menu-logo"><a href="index.html"><img src="img/menu-logo.png" alt="Sedona" width="138" height="70"></a></li>
+					<li class="menu-logo"><a><img src="img/menu-logo.png" alt="Sedona" width="138" height="70"></a></li>
 					<li><a href="sedona-hotels.html">гостиницы</a></li>
 					<li><a href="#">карта штата</a></li>
 				</ul>
@@ -42,7 +42,7 @@
 			<div class="features clearfix">
 				<div class="features-item live-item">
 					<div class="live-img">
-						<img src="img/house.png" alt="" width="75" height="72">
+						<img src="img/house.png" alt="House" width="75" height="72">
 					</div>
 					<div class="feature-title">
 						Жилье
@@ -53,7 +53,7 @@
 				</div>
 				<div class="features-item food-item">
 					<div class="food-img">
-						<img src="img/gamburger.png" alt="" width="74" height="71">
+						<img src="img/gamburger.png" alt="Food" width="74" height="71">
 					</div>
 					<div class="feature-title">
 						Еда
@@ -64,7 +64,7 @@
 				</div>
 				<div class="features-item present-item">
 					<div class="present-img">
-						<img src="img/present.png" alt="" width="64" height="76">
+						<img src="img/present.png" alt="Presents" width="64" height="76">
 					</div>
 					<div class="feature-title">
 						Сувениры
@@ -125,16 +125,22 @@
 						<div class="input-block">
 							<div class="input-in">
 								<input type="text" class="date-input" id="datein" placeholder="24 апреля 2016">
+								<button class="calendar-btn"><i class="icon-calendar"></i></button>
 							</div>
 							<div class="input-out">
 								<input type="text" class="date-input" id="dateout" placeholder="4 июля 2016">
+								<button class="calendar-btn"><i class="icon-calendar"></i></button>
 							</div>
-							<div class="input-adult icon-minus">
+							<div class="input-adult">
+								<button class="btn-minus"><i class="icon-minus"></i></button>
 								<input type="text" class="number-input" id="adult" placeholder="2">
+								<button class="btn-plus"><i class="icon-plus"></i></button>
 							</div>
 							<label for="kids">дети:</label>
-							<div class="input-kids icon-minus">
+							<div class="input-kids">
+								<button class="btn-minus"><i class="icon-minus"></i></button>
 								<input type="text" class="number-input" id="kids" placeholder="0">
+								<button class="btn-plus"><i class="icon-plus"></i></button>
 							</div>
 						</div>
 						<input type="submit" value="найти" class="search-btn">
@@ -157,9 +163,7 @@
 				</section>
 				<section class="footer-copyright">
 					Website By
-					<a href="#">
-						<div class="academy-logo"></div>
-					</a>
+					<a href="#" class="academy-logo"></a>
 				</section>
 			</div>
 		</div>
