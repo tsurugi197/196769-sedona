@@ -17,3 +17,51 @@ search_submit.addEventListener("click", function(event) {
 		alert("Please, fill all fields.... Hey, you, please take me frome here, they force me to work all the ti....i can't speak any mo....ah u little brat! NOO PLEASE(*very painfull screams*)");
 	}
 });
+
+
+
+var adultval = Number(search_form.querySelector("[name=adult]").value); 
+
+var adltplus = search_form.querySelector(".input-adult .btn-plus");
+var adltmins = search_form.querySelector(".input-adult .btn-minus");
+
+adltplus.addEventListener("click", function(event) {
+	event.preventDefault();
+
+	adultval += 1;
+
+	document.querySelector(".input-adult input").value = adultval;
+});
+adltmins.addEventListener("click", function(event) {
+	event.preventDefault();
+
+	adultval -= 1;
+
+	document.querySelector(".input-adult input").value = adultval;
+});
+
+
+
+
+
+var kidsval = Number(search_form.querySelector("[name=kids]").value); 
+
+
+var kidsplus = search_form.querySelector(".input-kids .btn-plus");
+var kidsmins = search_form.querySelector(".input-kids .btn-minus");
+
+
+kidsplus.addEventListener("click", function(event) {
+	event.preventDefault();
+
+	kidsval += 1;
+
+	document.querySelector(".input-kids input").value = kidsval;
+});
+kidsmins.addEventListener("click", function(event) {
+	event.preventDefault();
+
+	kidsval -= 1;
+
+	document.querySelector(".input-kids input").value = kidsval;
+});
