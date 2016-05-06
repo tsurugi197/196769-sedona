@@ -198,6 +198,7 @@ b {
 }
 .city {
 	width: 290px;
+	min-height: 150px;
 	padding: 53px 55px;
 }
 .fact-lightblue {
@@ -314,6 +315,7 @@ b {
 	float: right;
 	width: 308px;
 	padding: 56px 46px 50px 46px;
+	min-height: 150px;
 }
 .bridge-image {
 	float: left;
@@ -505,13 +507,14 @@ label[for="kids"] {
 }
 .number-input {
 	display: inline-block;
-	width: 15px;
+	width: 54px;
 	height: 36px;
-	padding-left: 54px;
-	padding-right: 45px;
+	padding-left: 30px;
+	padding-right: 30px;
 	margin-bottom: 54px;
 	line-height: 36px;
 	font-weight: bold;
+	text-align: center;
 	text-transform: uppercase;
 	color: #000000;
 	background: #f2f2f2;
@@ -994,22 +997,7 @@ input[type="checkbox"]:disabled + .check-status::before {
 :focus:-ms-input-placeholder {
 	color: transparent;
 }
-.search-form input[placeholder] {
-	line-height: 26px;
-	text-overflow:ellipsis;
-}
-.search-form input::-moz-placeholder {
-	line-height: 26px;
-	text-overflow:ellipsis;
-} 
-.search-form input:-moz-placeholder {
-	line-height: 26px;
-	text-overflow:ellipsis;
-} 
-.search-form input:-ms-input-placeholder {
-	line-height: 26px;
-	text-overflow:ellipsis;
-} 
+
 /* search-form animation */
 @keyframes search-show {
 	0% {
