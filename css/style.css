@@ -12,7 +12,6 @@
 @font-face {
   font-weight: normal;
   font-style: normal;
-
   font-family: "symbols-sedona";
   src: url("../fonts/symbols-sedona.woff") format("woff"),
        url("../fonts/symbols-sedona.woff2") format("woff2");
@@ -24,7 +23,6 @@
   width: 1em;
   margin-right: 0.2em;
   margin-left: 0.2em;
-
   font-weight: normal;
   line-height: 1em;
   font-family: "symbols-sedona";
@@ -33,7 +31,6 @@
   text-decoration: inherit;
   font-style: normal;
   font-variant: normal;
-
   speak: none;
 }
 [class^="icon-"]::after,
@@ -42,7 +39,6 @@
   width: 1em;
   margin-right: 0.2em;
   margin-left: 0.2em;
-
   font-weight: normal;
   line-height: 1em;
   font-family: "symbols-sedona";
@@ -51,7 +47,6 @@
   text-decoration: inherit;
   font-style: normal;
   font-variant: normal;
-
   speak: none;
 }
 .icon-facebook::before { content: "\66"; } /* "f" */
@@ -438,10 +433,12 @@ b {
 	width: 110px;
 	vertical-align: top;
 }
+
 .search-form label {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
+	cursor: pointer;
 }
 .labels ul {
 	padding: 0 0;
@@ -476,7 +473,7 @@ b {
 }
 .input-kids, 
 .input-adult {
-	display: inline-block;
+	float: left;
 }
 .input-in, 
 .input-out {
@@ -507,11 +504,20 @@ b {
 	color: #81b3d2;
 }
 label[for="kids"] {
+	float: left;
+	margin-top: 7px;
 	margin-left: 50px;
 	margin-right: 22px;
 }
+/* deal with it by changing display: inline-block to float i think is the best way to do this without breaking normal text position */
+/* amd about labels it's all bounded width inputs  */
+/* not content images has been merged into sprite it's only footer-logo and calendar icon other images is content images */
+/* on sort-line, fixed focus on active sort item, li not interact with other element when u click on it  */
+/* and about main-menu logo without href on presintation, alexandr showed us how we can do unactive current-page main-menu item 
+and  it was few ways including remove href from current-page menu-item, 
+because it best way to do this with out adding extra styles to span or something which will replace a in menu */ 
 .number-input {
-	display: inline-block;
+	float: left;	
 	width: 54px;
 	height: 36px;
 	padding-left: 30px;
@@ -648,13 +654,16 @@ label[for="kids"] {
 	margin-left: 6px;
 	width: 113px;
 	height: 39px;
-	background: url('../img/htmlacademylogo.png');
+	background: url('../img/sprite.png');
+	background-position: -143px -10px;
 }
 .academy-logo:hover {
-	background: url('../img/hover-logo.png');
+	background: url('../img/sprite.png');
+	background-position: -10px -10px;
 }
 .academy-logo:focus {
-	background: url('../img/logo-down.png');
+	background: url('../img/sprite.png');
+	background-position: -276px -10px;
 }
 /* sedona - hotels */
 .inner-page .footer-block {
@@ -745,6 +754,7 @@ input[type="checkbox"]:disabled + .check-status::before {
 	padding-right: 10px;
 	font-size: 14px;
 	line-height: 30px;
+	cursor: pointer;
 }
 .range-filter input {
 	width: 50px;
@@ -824,27 +834,26 @@ input[type="checkbox"]:disabled + .check-status::before {
 	background: #ffffff;
 }
 .sort-line {
-	padding: 31px 73px;
-	padding-top: 26px;
+	padding: 26px 73px;
+	padding-top: 31px;
 	border-bottom: solid 1px #e5e5e5;
 }
 .sort-line .result-count {
-	display: inline-block;
-	vertical-align: bottom;
-	margin-right: 43px;
+	float: left;
+	margin-right: 46px;
 	font-size: 21px;
 	font-weight: bold;
 }
 .sort-line .sort-by {
-	display: inline-block;
-	margin-right: 34px;
-	vertical-align: bottom;
+	float: left;
+	margin-top: 5px;
+	margin-right: 40px;
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: bold;
 }
 .sort-line ul {
-	display: inline-block;
+	float: left;
 	margin: 0;
 	padding: 0;
 	font-size: 0;
@@ -852,13 +861,15 @@ input[type="checkbox"]:disabled + .check-status::before {
 }
 .sort-line li {
 	display: inline-block;
+	vertical-align: middle;
 }
 .sort-line a {
 	display: inline-block;
-	vertical-align: bottom;
+	vertical-align: middle;
 	margin-right: 32px;
+	padding-top: 5px;
 	font-size: 12px;
-	line-height: 18px;
+	line-height: 14px;
 	text-decoration: none;
 	color: #b1b1b1;
 	border-bottom: dotted 1px #81b3d2;
@@ -872,8 +883,13 @@ input[type="checkbox"]:disabled + .check-status::before {
 	color: #81b3d2;
 }
 .sort-line a:focus {
+	margin-top: -1px;
 	color: #000000;
 	border: none;
+}
+.active-sort a:focus {
+	margin-top: 0;
+	color: #81b3d2;
 }
 .sort-direction { 
 	float: right;
@@ -937,6 +953,7 @@ input[type="checkbox"]:disabled + .check-status::before {
 }
 .more-info {
 	display: inline-block;
+	vertical-align: middle;
 	padding: 0 16.5px;
 	font-size: 14px;
 	line-height: 27px;
@@ -954,6 +971,7 @@ input[type="checkbox"]:disabled + .check-status::before {
 }
 .booking {
 	display: inline-block;
+	vertical-align: middle;
 	padding: 0 16px;
 	font-size: 14px;
 	line-height: 27px;
@@ -1064,3 +1082,9 @@ input[type="checkbox"]:disabled + .check-status::before {
 .google-map {
 	position: absolute;
 }
+/* frame-fix */ 
+ iframe {
+ 	border-style: none;
+ 	border-width: 0;
+ 	border-color: transparent;
+ }
