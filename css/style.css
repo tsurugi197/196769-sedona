@@ -930,7 +930,7 @@ input[type="checkbox"]:disabled + .check-status::before {
 }
 .more-info {
 	display: inline-block;
-	padding: 0 17px;
+	padding: 0 16.5px;
 	font-size: 14px;
 	line-height: 27px;
 	font-weight: bold;
