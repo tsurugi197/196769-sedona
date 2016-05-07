@@ -104,6 +104,7 @@ b {
 }
 .main-navigation li {
 	display: inline-block;
+	vertical-align: middle;
 }
 .main-navigation a {
 	display: block;
@@ -175,8 +176,8 @@ b {
 }
 .sedona-narrow {
 	position: relative;
-	bottom: 5px;
 	display: inline-block;
+	vertical-align: middle;
 	width: 13px;
 	height: 2px;
 	margin: 0 2px;
@@ -185,7 +186,7 @@ b {
 	border-bottom: 1px solid #bbbbbb;
 }
 .fact-block .sedona-narrow {
-	bottom: 3px;
+	bottom: 2px;
 	width: 9px;
 	height: 2px;
 	background: #bcd6e7;
@@ -227,6 +228,7 @@ b {
 	left: 120px;
 	top: 10px;
 	display: inline-block;
+	vertical-align: middle;
 	width: 9px;
 	height: 2px;
 	background: #bcd6e7;
@@ -237,6 +239,7 @@ b {
 	right: 120px;
 	top: 10px;
 	display: inline-block;
+	vertical-align: middle;
 	width: 9px;
 	height: 2px;
 	background: #bcd6e7;
@@ -431,6 +434,7 @@ b {
 }
 .labels {
 	display: inline-block;
+	vertical-align: middle;
 	width: 110px;
 	vertical-align: top;
 }
@@ -450,6 +454,7 @@ b {
 }
 .input-block {
 	display: inline-block;
+	vertical-align: middle;
 }
 .date-input {
 	display: block;
@@ -611,6 +616,7 @@ label[for="kids"] {
 }
 .social-btn {
 	display: inline-block;
+	vertical-align: middle;
 	width: 46px;
 	height: 48px;
 	margin-right: 6px;
@@ -638,8 +644,8 @@ label[for="kids"] {
 }
 .academy-logo {
 	display: inline-block;
-	margin-left: 6px;
 	vertical-align: middle;
+	margin-left: 6px;
 	width: 113px;
 	height: 39px;
 	background: url('../img/htmlacademylogo.png');
@@ -734,6 +740,7 @@ input[type="checkbox"]:disabled + .check-status::before {
 }
 .range-filter label {
 	display: inline-block;
+	vertical-align: middle;
 	padding-left: 65px;
 	padding-right: 10px;
 	font-size: 14px;
